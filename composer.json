@@ -72,8 +72,8 @@
             "php artisan key:generate"
         ],
         "compile": [
-            "chmod 644 /app/example.env",
-            "chmod 755 -R /app/storage"
+            "chmod 644 app/example.env",
+            "chmod 755 -R app/storage"
         ]
     },
     "config": {
