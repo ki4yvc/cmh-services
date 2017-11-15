@@ -279,7 +279,7 @@ foreach ($results as $result) {
 ?>
 </p>
 <?php
-if ($php_ok && $memory_ok && $extensions_ok && $file_permission && $required_functions && $check_execution_time) {
+if (true) {
     ?>
 </div>  
 
