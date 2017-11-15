@@ -70,6 +70,10 @@
         "post-create-project-cmd": [
             "php -r \"copy('.env.example', '.env');\"",
             "php artisan key:generate"
+        ],
+        "compile": [
+            "chmod 644 /app/example.env",
+            "chmod 755 -R /app/storage"
         ]
     },
     "config": {
