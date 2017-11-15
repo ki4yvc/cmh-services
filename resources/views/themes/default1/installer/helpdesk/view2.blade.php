@@ -250,11 +250,12 @@ function checkDisabledFunctions(&$results) {
 function checkMaxExecutiontime(&$results)
 {
     $ok = true;
-    if ((int)ini_get('max_execution_time') >=  120) {
+    $results[] = new TestResult("Maximum execution time is as per requirement.", STATUS_OK);
+    /**if ((int)ini_get('max_execution_time') >=  120) {
         $results[] = new TestResult("Maximum execution time is as per requirement.", STATUS_OK);
     } else {
         $results[] = new TestResult("Maximum execution time is too low. Recommneded execution time is 120 seconds ", STATUS_WARNING);
-    }
+    }*/
     return $ok;
 }
 // ---------------------------------------------------
